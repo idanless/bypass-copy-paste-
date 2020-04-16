@@ -6,7 +6,7 @@ class Key:
     def __init__(self,clip="test"):
         self.keywait = keyboard.wait('left alt+left ctrl+a')
         self.clip = clip
-        self.write = keyboard.write(self.copyclip())
+        self.write = keyboard.write('\n'+self.copyclip())
 
     def copyclip(self):
         clipboard_content = pyperclip.paste()
