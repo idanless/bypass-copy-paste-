@@ -3,10 +3,11 @@ import pyperclip
 import time
 
 class Key:
+    #overcome on the bug in library
     def __init__(self,clip="test"):
         self.keywait = keyboard.wait('left ctrl+q')
-        self.clip = clip
-        self.write = keyboard.write('\t')
+        self.clip = ""
+        self.write = keyboard.write(self.clip)
 
 class Shoot:
     def __init__(self,clip="test"):
